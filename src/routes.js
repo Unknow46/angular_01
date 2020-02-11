@@ -68,14 +68,14 @@ routes.get('/hi', async (req, res) => {
     const cat_fact = catFact();
     // replacing \n in JSON by ''
     const result = {
-        gps: {lat: lat, long:long},
+        gps: {lat: lat, lgn:long},
         joke:final_joke.replace(/\\n/g, ''),
+      catFact:cat_fact,
         beer:{
           name:the_beer_name.replace(/\\n/g, ''),
           description:the_beer_description.replace(/\\n/g, '')
         },
-        tacos:tacos.replace(/\\n/g, ''),
-        fact:cat_fact
+        taco:tacos.replace(/\\n/g, '')
       };
 
     res.send(result)
