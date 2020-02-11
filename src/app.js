@@ -36,5 +36,4 @@ app.use((err, req, res, next) => { // eslint-disable-line no-unused-vars
       message: err.message
     });
 });
-
 export default app;
